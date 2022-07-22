@@ -2,9 +2,9 @@ require('dotenv').config('./.env');
 
 module.exports = {
   siteMetadata: {
-    title: `TechHub-blog`,
-    siteUrl: `https://techhub-blog.netlify.com`,
-    description: `TechHub Blog is a platform for latest technology news and updates.`,
+    title: `speakers-library`,
+    siteUrl: `https://speakerslibrary.in`,
+    description: `speakers-library is a book summery website.`,
   },
   plugins: [],
 };
