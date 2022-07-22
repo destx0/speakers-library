@@ -70,6 +70,7 @@ export const HeroSectionStyles = styled.div`
         justify-content: center;
         width: 100%;
         .hero__image {
+          border-radius: 1rem;
           height: 300px;
           margin: 0 auto;
         }

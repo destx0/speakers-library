@@ -4,7 +4,13 @@ module.exports = {
   siteMetadata: {
     title: `speakers-library`,
     siteUrl: `https://speakerslibrary.in`,
-    description: `speakers-library is a book summery website.`,
+    description: `speakers-library is a platform for knowledge in your native language`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-styled-components',
+  ],
 };

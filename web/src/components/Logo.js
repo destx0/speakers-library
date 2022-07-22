@@ -5,7 +5,12 @@ import LogoStyles from '../styles/LogoStyles';
 function Logo() {
   return (
     <LogoStyles to="/">
-      <FcBookmark />
+      <ul>
+        <li>
+          <FcBookmark />
+        </li>
+        <li className="logo__text">Speaker's Library </li>
+      </ul>
     </LogoStyles>
   );
 }

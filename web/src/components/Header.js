@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import HeaderStyles from '../styles/HeaderStyles';
 import { menu } from '../constants/menu';
 import Logo from './Logo';
-import LogoText from './LogoText';
+
 import ActionButton from './buttons/ActionButton';
 
 function Header() {
@@ -17,9 +17,7 @@ function Header() {
           <div className="logo">
             <Logo />
           </div>
-          <div className="logo__text">
-            <LogoText />
-          </div>
+
           <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
             <div className="mobileIcon">
               {/* <div className="searchIcon">
