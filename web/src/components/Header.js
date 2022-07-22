@@ -20,11 +20,11 @@ function Header() {
           <div className="logo__text">{/* <LogoText /> */}</div>
           <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
             <div className="mobileIcon">
-              <div className="searchIcon">
+              {/* <div className="searchIcon">
                 <div className="searchIcon__wrapper">
                   <MdSearch />
                 </div>
-              </div>
+              </div> */}
               <ActionButton
                 className="mobileMenuBtn"
                 onClick={() => setIsNavOpen(true)}
@@ -59,11 +59,11 @@ function Header() {
                     </Link>
                   </li>
                 ))}
-                <li className="searchIcon">
+                {/* <li className="searchIcon">
                   <div className="searchIcon__wrapper">
                     <MdSearch />
                   </div>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
