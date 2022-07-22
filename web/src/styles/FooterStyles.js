@@ -15,8 +15,8 @@ export const FooterStyles = styled.footer`
       display: inline-block;
       margin: 0 1rem;
       a {
-        color: var(--white-1);
-        font-size: 1.6rem;
+        color: var(--gray);
+        font-size: 1.5rem;
       }
     }
   }
