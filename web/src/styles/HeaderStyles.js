@@ -103,8 +103,9 @@ export default styled.header`
         .mobileMenuCloseBtn {
           color: crimson;
           position: absolute;
-          top: 10px;
-          right: 10px;
+          top: 16px;
+          right: 16px;
+          padding: 0.8rem;
           border-color: crimson;
           &:hover {
             background-color: crimson;
