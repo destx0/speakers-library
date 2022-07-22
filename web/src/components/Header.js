@@ -17,7 +17,9 @@ function Header() {
           <div className="logo">
             <Logo />
           </div>
-          <div className="logo__text">{/* <LogoText /> */}</div>
+          <div className="logo__text">
+            <LogoText />
+          </div>
           <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
             <div className="mobileIcon">
               {/* <div className="searchIcon">
