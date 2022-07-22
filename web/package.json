@@ -1,9 +1,9 @@
 {
-  "name": "tech-hub",
+  "name": "speakers-library",
   "version": "1.0.0",
   "private": true,
-  "description": "techHub",
-  "author": "shaif arfan",
+  "description": "speakers-library",
+  "author": "destx0",
   "keywords": [
     "gatsby"
   ],
