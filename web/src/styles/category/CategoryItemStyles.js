@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const CategoryItemStyles = styled.div`
+  display: flex;
+  align-items: center;
   background: var(--secondary);
   padding: 1.5rem;
   border-radius: 12px;
