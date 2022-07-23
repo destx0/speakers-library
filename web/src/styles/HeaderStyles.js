@@ -57,7 +57,7 @@ export default styled.header`
   .mobileMenuBtn {
     display: none;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 850px) {
     .mobileMenuCloseBtn,
     .mobileNavBg,
     .mobileIcon,
@@ -103,8 +103,8 @@ export default styled.header`
         .mobileMenuCloseBtn {
           color: crimson;
           position: absolute;
-          top: 16px;
-          right: 16px;
+          top: 15px;
+          right: 35px;
           padding: 0.8rem;
           border-color: crimson;
           &:hover {
