@@ -29,6 +29,7 @@ export default styled.header`
         }
         a {
           color: var(--white-1);
+
           display: inline-block;
           text-decoration: none;
           font-size: 1.6rem;

@@ -37,6 +37,8 @@ export const HeroSectionStyles = styled.div`
       }
       .hero__button {
         margin-top: 1.5rem;
+        box-shadow: rgba(103, 25, 204, 0.267) 0px 4px 16px,
+          rgba(105, 51, 206, 0.493) 0px 8px 32px;
       }
     }
     .right {
