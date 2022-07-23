@@ -8,7 +8,7 @@ export const ButtonStyles = styled(Link)`
   outline: none;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 4px;
+  border-radius: 1rem;
   font-size: 1.6rem;
   background: ${({ variant }) =>
     variant === buttonTypes.primary
