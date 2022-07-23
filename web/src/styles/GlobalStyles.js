@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --grey: var(--gray);
     --white: white;
     --black: black;
+    --orange: #3a86ff;
   }
   html{
     font-size: 10px;

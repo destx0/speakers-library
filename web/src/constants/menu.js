@@ -4,7 +4,7 @@ export const menu = [
     path: '/',
   },
   {
-    title: 'Summeries',
+    title: 'Summaries',
     path: '/blogs',
   },
   {
