@@ -9,7 +9,7 @@ import { Title } from '../typography/Title';
 function BlogItem({ path, title, image, categories, publishedAt }) {
   return (
     <BlogItemStyles>
-      <Link to={`/blogs/${path}`}>
+      <Link to={`/summary/${path}`}>
         <GatsbyImage
           image={image.imageData}
           alt={image.altText}
