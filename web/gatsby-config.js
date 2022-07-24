@@ -20,5 +20,11 @@ module.exports = {
         ...sanityConfig,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `speakerslibrary`,
+      },
+    },
   ],
 };

@@ -19,8 +19,8 @@ export const socialLinks = [
     icon: <FaFacebook />,
   },
   {
-    name: 'twitter',
-    url: 'mailto:speakerslibrary@gmail.com',
+    name: 'email',
+    url: 'mailto:contact@speakerslibrary.in',
     icon: <AiOutlineMail />,
   },
 ];

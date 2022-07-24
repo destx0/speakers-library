@@ -4,13 +4,13 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { format } from 'date-fns';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 import { BiCategory } from 'react-icons/bi';
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
 import SEO from '../components/SEO';
 import PageSpace from '../components/PageSpace';
 import { Title } from '../components/typography/Title';
 import ParagraphText from '../components/typography/ParagraphText';
 import MyPortableText from '../components/MyPortableText';
-import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -42,13 +42,13 @@ export const postQuery = graphql`
 
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
-// diqus
-  const PostTemplate = () => {
-  let disqusConfig = {
-    url: `${config.siteUrl+location.pathname}`,
-    identifier: post.id,
-    title: post.title,
-  }
+  // diqus
+  // const PostTemplate = () => {
+  // let disqusConfig = {
+  //   url: `${config.siteUrl+location.pathname}`,
+  //   identifier: post.id,
+  //   title: post.title,
+  // }
 
   return (
     <SingleBlogStyles>
@@ -91,10 +91,10 @@ function singleBlog({ data }) {
             <MyPortableText value={blog._rawBody} />
           </div>
           {/* disqus st */}
-          <CommentCount config={disqusConfig} placeholder={'...'} />
-      /* Post Contents */
-      <Disqus config={disqusConfig} />
-      {/* disqus st */}
+          {/* <CommentCount config={disqusConfig} placeholder="..." />
+          
+          <Disqus config={disqusConfig} /> */}
+          {/* disqus st */}
         </div>
       </PageSpace>
     </SingleBlogStyles>
