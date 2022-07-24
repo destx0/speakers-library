@@ -20,7 +20,7 @@ export const socialLinks = [
   },
   {
     name: 'twitter',
-    url: 'mailto:name@rapidtables.com',
+    url: 'mailto:speakerslibrary@gmail.com',
     icon: <AiOutlineMail />,
   },
 ];
