@@ -10,6 +10,7 @@ import PageSpace from '../components/PageSpace';
 import { Title } from '../components/typography/Title';
 import ParagraphText from '../components/typography/ParagraphText';
 import MyPortableText from '../components/MyPortableText';
+import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -41,6 +42,13 @@ export const postQuery = graphql`
 
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
+// diqus
+  const PostTemplate = () => {
+  let disqusConfig = {
+    url: `${config.siteUrl+location.pathname}`,
+    identifier: post.id,
+    title: post.title,
+  }
 
   return (
     <SingleBlogStyles>
@@ -82,6 +90,11 @@ function singleBlog({ data }) {
           <div className="body">
             <MyPortableText value={blog._rawBody} />
           </div>
+          {/* disqus st */}
+          <CommentCount config={disqusConfig} placeholder={'...'} />
+      /* Post Contents */
+      <Disqus config={disqusConfig} />
+      {/* disqus st */}
         </div>
       </PageSpace>
     </SingleBlogStyles>
