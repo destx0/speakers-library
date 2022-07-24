@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
 
 export const socialLinks = [
   {
@@ -17,9 +18,9 @@ export const socialLinks = [
     url: 'https://www.facebook.com/The-Speaker-100100148004919',
     icon: <FaFacebook />,
   },
-  // {
-  //   name: 'twitter',
-  //   url: 'https://www.twitter.com/',
-  //   icon: <FaTwitter />,
-  // },
+  {
+    name: 'twitter',
+    url: 'mailto:name@rapidtables.com',
+    icon: <AiOutlineMail />,
+  },
 ];
