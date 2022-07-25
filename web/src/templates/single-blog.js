@@ -47,6 +47,11 @@ export const postQuery = graphql`
 
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
+  // console.log(blog.slug.current);
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: blog.slug.current },
+  };
   // diqus
   // const PostTemplate = () => {
   // let disqusConfig = {
@@ -98,12 +103,12 @@ function singleBlog({ data }) {
           </div>
           {/* disqus st */}
           {/* <CommentCount config={disqusConfig} placeholder="..." />
-          
           <Disqus config={disqusConfig} /> */}
           {/* disqus st */}
         </div>
         <div className="container">
           <div className="s9-widget-wrapper" />
+          <DiscussionEmbed {...disqusConfig} />
         </div>
         <div className="container">
           <FeaturedBlogs />
