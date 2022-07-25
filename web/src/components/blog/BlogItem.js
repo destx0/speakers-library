@@ -16,7 +16,7 @@ function BlogItem({ path, title, image, categories, publishedAt }) {
           className="img"
         />
       </Link>
-      <Link to={`/blogs/${path}`}>
+      <Link to={`/summary/${path}`}>
         <Title className="title">{title}</Title>
       </Link>
       {publishedAt && (

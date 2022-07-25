@@ -23,7 +23,7 @@ function FeaturedBlogs() {
             coverImage {
               alt
               asset {
-                gatsbyImageData(placeholder: BLURRED)
+                gatsbyImageData(placeholder: DOMINANT_COLOR)
               }
             }
             slug {
