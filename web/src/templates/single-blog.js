@@ -98,6 +98,9 @@ function singleBlog({ data }) {
           {/* disqus st */}
         </div>
         <div className="container">
+          <div className="s9-widget-wrapper" />
+        </div>
+        <div className="container">
           <FeaturedBlogs />
         </div>
       </PageSpace>

@@ -26,5 +26,13 @@ module.exports = {
         shortname: `speakerslibrary`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-social9-socialshare',
+      options: {
+        content: 'da2f2c59832a4614a34f76e5cffb1501',
+        async: true,
+        defer: true,
+      },
+    },
   ],
 };

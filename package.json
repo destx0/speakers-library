@@ -29,6 +29,8 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "gatsby-plugin-disqus": "^1.2.4"
+    "gatsby-plugin-disqus": "^1.2.4",
+    "react-feather": "^2.0.10",
+    "react-share": "^4.4.0"
   }
 }
