@@ -61,13 +61,5 @@ module.exports = {
         headerHeight: 0,
       },
     },
-    {
-      resolve: 'gatsby-plugin-pace',
-      options: {
-        theme: 'minimal',
-        color: 'white',
-        cdn: 'https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.min.js',
-      },
-    },
   ],
 };
