@@ -14,6 +14,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
+
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -48,6 +49,16 @@ module.exports = {
         color: `tomato`,
         // Disable the loading spinner.
         showSpinner: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-page-progress',
+      options: {
+        height: 3,
+        prependToBody: false,
+        color: `#00D7FF`,
+        footerHeight: 500,
+        headerHeight: 0,
       },
     },
   ],
