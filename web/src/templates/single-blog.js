@@ -11,6 +11,7 @@ import PageSpace from '../components/PageSpace';
 import { Title } from '../components/typography/Title';
 import ParagraphText from '../components/typography/ParagraphText';
 import MyPortableText from '../components/MyPortableText';
+import FeaturedBlogs from '../components/homepage/FeaturedBlogs';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -95,6 +96,9 @@ function singleBlog({ data }) {
           
           <Disqus config={disqusConfig} /> */}
           {/* disqus st */}
+        </div>
+        <div className="container">
+          <FeaturedBlogs />
         </div>
       </PageSpace>
     </SingleBlogStyles>

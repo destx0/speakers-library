@@ -2,7 +2,7 @@ import { format } from 'date-fns';
 import { GiNotebook } from 'react-icons/gi';
 
 export default {
-  title: 'Summery',
+  title: 'Summary',
   name: 'blog',
   type: 'document',
   icon: GiNotebook,

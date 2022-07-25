@@ -9,7 +9,7 @@ function goal() {
     <PageSpace>
       <div className="container">
         <goalStyles>
-          <SectionTitle className="title">Our Mission</SectionTitle>
+          <SectionTitle className="title">Our Goal</SectionTitle>
           <ParagraphText className="goal-text">
             যেমন আমরা সকলেই জানি, আমরা আজ ডিজিটাল যুগে বসবাস করছি, যেখানে আমরা
             প্রয়োজনের তুলনায় বেশি ব্যস্ত। আর এই ব্যস্ততার ফলে আমরা নিজেকে সময়
