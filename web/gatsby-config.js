@@ -44,22 +44,23 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: true,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-page-progress',
       options: {
         height: 5,
         prependToBody: false,
         color: `#00D7FF`,
         footerHeight: 500,
-        headerHeight: 0,
+        headerHeight: 2,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true,
+        spinnerSelector: 'div.spin',
       },
     },
   ],
