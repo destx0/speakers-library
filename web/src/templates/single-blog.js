@@ -4,7 +4,8 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { format } from 'date-fns';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 import { BiCategory } from 'react-icons/bi';
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+
+import { DiscussionEmbed } from 'disqus-react';
 import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
 import SEO from '../components/SEO';
 import PageSpace from '../components/PageSpace';
@@ -90,6 +91,7 @@ function singleBlog({ data }) {
           <hr className="hr" />
           <div className="body">
             <MyPortableText value={blog._rawBody} />
+            <hr className="hr" />
           </div>
           {/* disqus st */}
           {/* <CommentCount config={disqusConfig} placeholder="..." />
