@@ -20,6 +20,9 @@ export const postQuery = graphql`
       title
       publishedAt
       _rawBody
+      slug {
+        current
+      }
       coverImage {
         asset {
           gatsbyImageData(placeholder: DOMINANT_COLOR)
