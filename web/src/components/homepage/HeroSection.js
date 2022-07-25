@@ -27,7 +27,7 @@ function HeroSection() {
               className="hero__image"
               src="../../images/hero.jpg"
               alt="vr guy"
-              placeholder="blurred"
+              placeholder="tracedSVG"
               objectPosition="50% 30%"
             />
           </div>

@@ -29,7 +29,7 @@ export const BlogsQuery = graphql`
         coverImage {
           alt
           asset {
-            gatsbyImageData
+            gatsbyImageData(placeholder: DOMINANT_COLOR)
           }
         }
       }

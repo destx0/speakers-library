@@ -2,7 +2,6 @@ import React from 'react';
 import PageSpace from '../components/PageSpace';
 import ParagraphText from '../components/typography/ParagraphText';
 import { SectionTitle } from '../components/typography/Title';
-import { goalStyles } from '../styles/goalStyles';
 
 function goal() {
   return (

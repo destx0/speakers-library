@@ -37,7 +37,7 @@ export const query = graphql`
         coverImage {
           alt
           asset {
-            gatsbyImageData
+            gatsbyImageData(placeholder: DOMINANT_COLOR)
           }
         }
       }
