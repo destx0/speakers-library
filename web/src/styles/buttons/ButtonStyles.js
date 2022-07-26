@@ -7,9 +7,13 @@ export const ButtonStyles = styled(Link)`
   cursor: pointer;
   outline: none;
   border: none;
-  padding: 1rem 2rem;
+  gap: 1rem;
+  padding: 2rem 2rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
   border-radius: 1rem;
   font-size: 1.6rem;
+
   background: ${({ variant }) =>
     variant === buttonTypes.primary
       ? 'linear-gradient(135deg, var(--secondary), var(--primary))'
