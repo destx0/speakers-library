@@ -4,8 +4,8 @@ export const CategoryItemStyles = styled.div`
   display: flex;
   align-items: center;
   background: var(--secondary);
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 1.5rem 0.5rem;
+  border-radius: 1rem;
   background: #ff0084; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
