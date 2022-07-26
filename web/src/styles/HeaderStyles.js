@@ -14,6 +14,9 @@ export default styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--black-1);
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
   }
   .nav__wrapper {
     ul {
