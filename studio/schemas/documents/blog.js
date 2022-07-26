@@ -62,6 +62,16 @@ export default {
       name: 'body',
       type: 'richText',
     },
+    {
+      title: 'Flipkart Link',
+      name: 'flipkartUrl',
+      type: 'url',
+    },
+    {
+      title: 'Amazon link',
+      name: 'amazonUrl',
+      type: 'url',
+    },
   ],
   preview: {
     select: {

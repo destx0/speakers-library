@@ -17,8 +17,9 @@ export const SingleBlogStyles = styled.div`
   }
   .categoriesText,
   .author,
-  .publishedAt {
-    margin-bottom: 0.5rem;
+  .publishedAt,
+  .buyOptions {
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -33,6 +34,24 @@ export const SingleBlogStyles = styled.div`
         text-decoration: underline;
       }
     }
+  }
+  .buyOptions {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 3rem; */
+    /* gap: 3rem; */
+    color: red;
+    align-items: flex-start;
+    a {
+      color: var(--white);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .buy__button {
+    display: flex;
   }
   .hr {
     margin: 2rem 0;

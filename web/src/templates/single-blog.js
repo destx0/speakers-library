@@ -3,6 +3,7 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { format } from 'date-fns';
 import { FiCalendar, FiUser } from 'react-icons/fi';
+import { SiFlipkart, SiAmazon } from 'react-icons/si';
 import { BiCategory } from 'react-icons/bi';
 
 import { DiscussionEmbed } from 'disqus-react';
@@ -13,6 +14,7 @@ import { Title } from '../components/typography/Title';
 import ParagraphText from '../components/typography/ParagraphText';
 import MyPortableText from '../components/MyPortableText';
 import FeaturedBlogs from '../components/homepage/FeaturedBlogs';
+import Button from '../components/buttons/Button';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -41,12 +43,15 @@ export const postQuery = graphql`
           current
         }
       }
+      flipkartUrl
+      amazonUrl
     }
   }
 `;
 
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
+  console.log(blog.flipkartUrl);
   // console.log(blog.slug.current);
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
@@ -100,7 +105,28 @@ function singleBlog({ data }) {
           <div className="body">
             <MyPortableText value={blog._rawBody} />
             <hr className="hr" />
-            <div className="container">
+            <div>
+              <Title className="title">Buy {blog.title} from </Title>
+              <div className="buyOptions">
+                <Button
+                  href={blog.flipkartUrl}
+                  tag={Link}
+                  className="buy__button"
+                >
+                  <SiFlipkart /> Flipkart
+                </Button>
+
+                <Button
+                  href={blog.amazonUrl}
+                  tag={Link}
+                  className="buy__button"
+                >
+                  <SiAmazon />
+                  Amazon
+                </Button>
+              </div>
+              <br />
+
               <div className="s9-widget-wrapper" />
               <hr className="hr" />
               <DiscussionEmbed {...disqusConfig} />
