@@ -100,15 +100,16 @@ function singleBlog({ data }) {
           <div className="body">
             <MyPortableText value={blog._rawBody} />
             <hr className="hr" />
+            <div className="container">
+              <div className="s9-widget-wrapper" />
+              <hr className="hr" />
+              <DiscussionEmbed {...disqusConfig} />
+            </div>
           </div>
           {/* disqus st */}
           {/* <CommentCount config={disqusConfig} placeholder="..." />
           <Disqus config={disqusConfig} /> */}
           {/* disqus st */}
-        </div>
-        <div className="container">
-          <div className="s9-widget-wrapper" />
-          <DiscussionEmbed {...disqusConfig} />
         </div>
         <div className="container">
           <FeaturedBlogs />
