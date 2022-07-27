@@ -15,6 +15,7 @@ import ParagraphText from '../components/typography/ParagraphText';
 import MyPortableText from '../components/MyPortableText';
 import FeaturedBlogs from '../components/homepage/FeaturedBlogs';
 import Button from '../components/buttons/Button';
+import ShareButtons from '../components/ShareButtons';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -52,7 +53,9 @@ export const postQuery = graphql`
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
   console.log(blog.flipkartUrl);
-  // console.log(blog.slug.current);
+  const title = ` Read ${blog.title} summary`;
+  const url = blog.amazonUrl;
+
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: blog.slug.current },
@@ -126,8 +129,9 @@ function singleBlog({ data }) {
                 </Button>
               </div>
               <br />
-
-              <div className="s9-widget-wrapper" />
+              <Title className="title">Share {blog.title} </Title>
+              <ShareButtons title={title} url={url} />
+              {/* <div className="s9-widget-wrapper" /> */}
               <hr className="hr" />
               <DiscussionEmbed {...disqusConfig} />
             </div>
