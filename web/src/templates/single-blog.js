@@ -53,8 +53,8 @@ export const postQuery = graphql`
 function singleBlog({ data }) {
   const blog = data.sanityBlog;
   console.log(blog.flipkartUrl);
-  const title = ` Read ${blog.title} summary`;
-  const url = blog.amazonUrl;
+  const title = ` Read ${blog.title} summary at`;
+  const url = `www.speakerslibrary.in/summary/${blog.slug.current}`;
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
