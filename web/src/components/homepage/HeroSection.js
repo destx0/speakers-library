@@ -15,8 +15,7 @@ function HeroSection() {
               Knowledge of 100s of books in your native language
             </h1>
             <ParagraphText className="hero__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
-              ipsum dolor sit amet consectetur adipisicing elit
+             
             </ParagraphText>
             <Button to="/summary" tag={Link} className="hero__button">
               Explore Summeries
