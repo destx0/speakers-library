@@ -15,7 +15,7 @@ export default styled.header`
     justify-content: space-between;
     align-items: center;
     background-color: var(--black-1);
-    padding: 0.7rem 2rem;
+    padding: 0.2rem 0rem;
     border-radius: 1rem;
   }
   .nav__wrapper {
