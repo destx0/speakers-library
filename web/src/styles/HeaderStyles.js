@@ -15,7 +15,7 @@ export default styled.header`
     justify-content: space-between;
     align-items: center;
     background-color: var(--black-1);
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 0.1rem;
     border-radius: 1rem;
   }
   .nav__wrapper {
@@ -121,6 +121,9 @@ export default styled.header`
         nav {
           transform: translateX(0);
         }
+      }
+      .header__container {
+        padding: 5rem 0rem;
       }
       .mobileNavBg {
         z-index: 1001;
